@@ -440,7 +440,7 @@
       this.eatenVirusIDs.push(virus.id);
       this.removeVirus(virus.id);
 
-      this.score -=100;
+      this.score -=10;
       this.scoreText.text = 'Score' + this.score;
       if(playerCell.mass < 10) {
         playerCell.mass = playerCell.mass * 0.75;
