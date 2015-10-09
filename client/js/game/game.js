@@ -521,10 +521,8 @@
 
     generateRandomFood: function() {
         var foodShapes = ['food0', 'food1', 'food2', 'food3', 'food4', 'food5'];
-        //return Math.random() * (max - min) + min;
         var rando = Math.floor(Math.random()*foodShapes.length);
         var foodShape = foodShapes[rando];
-        console.log("~~~random number~~~", rando);
         return foodShape;
     },
 
