@@ -133,9 +133,9 @@
 
         <!-- Chat -->
     <div id="gameChatDiv" ng-controller="gameChatDivController">
-    <h3>Talk Some Shit</h3>
-      <ul id="gameChatDivMessages" ng-repeat="message in messages">
-        <li>
+    <h3>Talk Some Trash</h3>
+      <ul id="gameChatDivMessages">
+        <li ng-repeat="message in messages">
           <span class="gameChatDivMessagesUser"
             ng-class='
             {
@@ -229,6 +229,7 @@
   </div>
 
   <div id="playersDiv" ng-controller="playersDivController">
+
     <div ng-model="players" id="playersDivTitle">
       Players
     </div>
@@ -244,6 +245,7 @@
         <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
       </button>
     </div>
+
     <ul id="playersDivList">
       <li ng-repeat="player in gameVars.roomPlayers | filter:playerFilter:strict" class="playersDivListPlayer"
         ng-class="
